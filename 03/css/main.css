@@ -1,0 +1,94 @@
+:root{
+    /* (--) variável CSS */
+    --color-background-menu: #312450;
+    --color-background-welcome: #5e42a6;
+    --color-background-we-are-1: #5052b5;
+    --color-background-we-are-2: #4142b6;
+    --color-background-we-do: #b74e91;
+    --color-background-we-do-grid: #d16fad;
+    --color-background-we-do-icon: #973573;
+    --color-background-footer: #493382;
+    --color-primary: #ffffff8C;
+    --color-secondary: #ffffff;
+
+    font-family: 'Nunito', sans-serif;
+    font-size: 60%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100vh;
+    background-color: var(--color-background-welcome);
+}
+
+img{
+    display: none;
+}
+
+/** Estilos da nav **/
+nav.landing-page{
+    width: 100%;
+    
+}
+
+.desktop{
+    display: none;
+}
+
+.mobile{
+    position: relative;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background-color: var(--color-background-welcome);
+}
+
+.mobile i{
+    position: absolute;
+    top: 5px;
+    right: 0;
+    color: var(--color-secondary);
+    font-size: 3rem;
+    cursor: pointer;
+    z-index: 9;
+    padding-right: 1rem;
+}
+
+.mobile .block{
+    display: block;
+    width: 100%;
+    background-color: var(--color-secondary);
+}
+
+.mobile ul{
+    display: none;
+    width: 95%;
+    margin: 0 auto;
+    background-color: white;
+    list-style-type: none;
+    list-style-position: inside;
+}
+
+.mobile ul li{
+    padding: 1.5rem 0;
+    text-align: center;
+    border-bottom: 1px solid var(--color-background-menu);
+    cursor: pointer;
+}
+
+.mobile ul li:last-of-type{
+    border-bottom: none;
+}
+
+.mobile ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    line-height: 2rem;
+    font-weight: 600;
+}
+/*****/
