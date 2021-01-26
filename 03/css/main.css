@@ -26,6 +26,11 @@ html,body{
     background-color: var(--color-background-welcome);
 }
 
+.container{
+    margin: 0 auto;
+    width: 95%;   
+}
+
 img{
     display: none;
 }
@@ -91,4 +96,31 @@ nav.landing-page{
     line-height: 2rem;
     font-weight: 600;
 }
+/*****/
+
+/** Estilos da section.welcome **/
+    section.welcome h1{
+        color: var(--color-secondary);
+        font-size: 4rem;
+        font-weight: 400;
+        padding-bottom: 2rem;
+    }
+
+    section.welcome p{
+        color: var(--color-primary);
+        font-size: 1.5rem;
+        padding-bottom: 2rem;
+    }
+
+    section.welcome p > a{
+        color: var(--color-primary);
+        font-size: 1.5rem;
+        text-decoration: none;
+        border-bottom:  1px dotted var(--color-primary);
+        transition: .2s;
+    }
+
+    section.welcome p > a:hover{
+        color: var(--color-secondary);
+    }
 /*****/
