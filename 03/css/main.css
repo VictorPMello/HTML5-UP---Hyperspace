@@ -5,7 +5,7 @@
     --color-background-we-are-1: #5052b5;
     --color-background-we-are-2: #4142b6;
     --color-background-we-do: #b74e91;
-    --color-background-we-do-grid: #d16fad;
+    --color-background-we-do-grid: #ee9fd138;
     --color-background-we-do-icon: #973573;
     --color-background-footer: #493382;
     --color-primary: #ffffff8C;
@@ -192,4 +192,89 @@ aside.img-3{
     font-size: 1.5rem;
     padding-bottom: 3.5rem;
 }
+/*****/
+
+/** Estilos da section.we-do **/
+section.we-do{
+    width: 100%;
+    background-color: var(--color-background-we-do);
+}
+
+.we-do-text h1{
+    color: var(--color-secondary);
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 4rem 0 2rem;
+}
+
+.we-do-text p{
+    color: var(--color-primary);
+    font-size: 1.5rem;
+    padding-bottom: 3.5rem;
+}
+
+.we-do-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: var(--color-background-we-do-grid);
+    margin-bottom: 2rem;
+}
+
+.grid-content{
+    height: 15rem;
+    position: relative;
+    padding: 5rem 0;
+    border-bottom: 1px solid rgba(247, 245, 245, 0.377);
+    border-left: 1px solid  rgba(247, 245, 245, 0.377);
+    border-right: 1px solid  rgba(247, 245, 245, 0.377);
+}
+
+.grid-content:nth-of-type(1){
+    border-top: 1px solid rgba(247, 245, 245, 0.377);
+}
+
+.grid-content i{
+    position: absolute;
+    top: 2.5rem;
+    left: 3rem;
+
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: var(--color-secondary);
+
+    text-align: center;
+    line-height: 4rem;
+    font-size: 1.7rem;
+    color: var(--color-background-we-do-icon);
+}
+
+.grid-content h2{
+    position: absolute;
+    top: 3.5rem;
+    left: 9rem;
+
+    color: var(--color-secondary);
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.grid-content p{
+    width: 25rem;
+    position: absolute;
+    top: 7rem;
+    left: 9rem;
+
+    color: var(--color-secondary);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+section.we-do > .container > a{
+    margin-bottom: 4rem;
+}
+/*****/
+
+/** Estilos da section.get-in **/
+
 /*****/
