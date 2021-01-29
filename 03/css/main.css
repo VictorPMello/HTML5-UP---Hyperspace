@@ -31,6 +31,10 @@ html,body{
     width: 90%;   
 }
 
+.clear{
+    clear: both;
+}
+
 .btn{
     display: inline-block;
     width: 14rem;
@@ -276,5 +280,87 @@ section.we-do > .container > a{
 /*****/
 
 /** Estilos da section.get-in **/
+section.get-in{
+    margin: 4rem 0;
+}
 
+aside.text h1{
+    color: var(--color-secondary);
+    font-size: 4rem;
+    font-weight: 600;
+    padding-bottom: 2rem;
+}
+
+aside.text p{
+    color: var(--color-primary);
+    font-size: 1.5rem;
+    padding-bottom: 4rem;
+}
+
+aside.contacts form{
+    width: 100%;
+    border-bottom: 1px solid var(--color-primary);
+    padding-bottom: 5rem;
+}
+
+.form-wraper{
+    float: left;
+    padding: 0 2rem;
+}
+
+label{
+    display: flex;
+    margin: 2rem 0;
+}
+
+.w50{
+    width: 50%;
+}
+
+.w100{
+    width: 100%;
+}
+
+.form-wraper label{
+    color: var(--color-secondary);
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.form-wraper input[type=text]{
+    width: 100%;
+    padding: 1.2rem;
+    border: 1px solid var(--color-primary);
+    border-radius: .5rem;
+    background-color:  #856ac965;
+    outline: none;
+}
+
+.form-wraper input[type=text]:focus{
+  border: 2px solid white;
+}
+
+.form-wraper textarea{
+    width: 100%;
+    height: 15rem;
+    padding: 1.2rem 1.2rem;
+    margin-bottom: 3rem;
+    border: 1px solid var(--color-primary);
+    border-radius: .5rem;
+    background-color:  #856ac965;
+    outline: none;
+    resize: none;
+}
+
+.form-wraper textarea:focus{
+    border: 2px solid white;
+}
+
+.form-wraper input[type=submit]{
+    background-color: var(--color-background-welcome);
+}
+
+.form-wraper input[type=submit]:hover{
+    background-color: #ccc9c915;
+}
 /*****/
