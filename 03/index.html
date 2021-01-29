@@ -134,22 +134,26 @@
 
             <aside class="contacts">
                 <form>
-                    <div class="w50">
+                    <div class="form-wraper w50">
                         <label for="name">Nome</label>
                         <input type="text" id="name" requared>
                     </div><!--.w50-->
 
-                    <div class="w50">
+                    <div class="form-wraper w50">
                         <label for="email">Email</label>
                         <input type="text" id="email" requared>
                     </div><!--.w50-->
 
-                    <div class="w100">
+                    <div class="form-wraper w100">
                         <label for="message">Message</label>
-                        <textarea name="menssage" id="message" cols="30" rows="10"></textarea>
-                    </div><!--.w50-->
+                        <textarea name="menssage" id="message"></textarea>
+                    </div><!--.w100-->
+                    
 
-                    <input type="submit" class="btn" value="send message">
+                    <div class="form-wraper">
+                        <input type="submit" class="btn" value="send message">
+                    </div>  
+                    <div class="clear"></div>    
                 </form>
 
                 <div class="social">
