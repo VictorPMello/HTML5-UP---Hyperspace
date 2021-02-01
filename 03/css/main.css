@@ -3,7 +3,8 @@
     --color-background-menu: #312450;
     --color-background-welcome: #5e42a6;
     --color-background-we-are-1: #5052b5;
-    --color-background-we-are-2: #4142b6;
+    --color-background-we-are-2: #4c4dacda;
+    --color-background-we-are-3: #4748a0ce;
     --color-background-we-do: #b74e91;
     --color-background-we-do-grid: #ee9fd138;
     --color-background-we-do-icon: #973573;
@@ -461,7 +462,7 @@ footer > .container{
 }
 /*****/
 
-/** Estilos do @media width:650px **/
+/** Estilos do @media width: 650px **/
 @media screen and (min-width: 650px){
     .container{
         width: 80vw;
@@ -639,6 +640,396 @@ footer > .container{
 
     .footer-wraper a{
         font-size: 1.6rem;
+    }
+    /*****/
+}
+/*****/
+
+/** Estilos do @media width: 820px **/
+@media screen and (min-width: 820px){
+    .container{
+        width: 85vw;
+    }
+    
+    .btn{
+        border-radius: 5rem;
+        width: 14rem;
+        height: 4.5rem;    
+        line-height: 4.5rem;
+        font-size: 1.2rem;
+    }
+
+    /** Estilos da nav **/
+    .desktop ul li{
+        padding: 1.2rem 0;
+        margin: 0 3.5rem;
+    }
+
+    .desktop ul li a{
+        font-size: 1.2rem;
+    }
+    /*****/
+
+    /** Estilos da section.welcome **/
+
+    section.welcome h1{
+        font-size: 3.5rem;
+    }
+
+    section.welcome p{
+        font-size: 1.7rem;
+    }
+
+    section.welcome p > a{
+        font-size: 1.7rem;
+    }
+    /*****/
+
+    /** Estilos da section.we-are **/
+
+    .we-are-box{
+        display: flex;
+        margin-bottom: 0;
+        background-color: var(--color-background-we-are-1);
+    }
+
+    .we-are-box:nth-of-type(2){
+        background-color: var(--color-background-we-are-2);
+    }
+
+    .we-are-box:nth-of-type(3){
+        background-color: var(--color-background-we-are-3);
+    }
+
+    aside.back{
+        width: 75%;
+        height: 35rem;
+        margin-bottom: 0;
+    }
+
+    .we-are-box > .container{
+        padding: 7rem 2rem 0;
+    }
+
+    .we-are-box h1{
+        font-size: 2.5rem;
+        padding-bottom: 2rem;
+    }
+
+    .we-are-box p{
+        font-size: 1.7rem;
+        padding-bottom: 5rem;
+    }
+    /*****/
+
+    /** Estilos da section.we-do **/
+    .we-do-text h1{
+        font-size: 3rem;
+    }
+
+    .we-do-text p{
+        font-size: 1.5rem;
+    }
+
+    .we-do-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .grid-content{
+        height: 15rem;
+    }
+
+    .grid-content:nth-of-type(1){
+        border-top: 1px solid rgba(247, 245, 245, 0.377);
+    }
+
+    .grid-content:nth-of-type(2){
+        border-top: 1px solid rgba(247, 245, 245, 0.377);
+    }
+
+    .grid-content i{
+        position: absolute;
+        top: 3.5rem;
+
+        width: 4.5rem;
+        height: 4.5rem;
+        line-height: 4.5rem;
+        font-size: 2rem;
+    }
+
+    .grid-content h2{
+        position: absolute;
+        top: 3.5rem;
+        left: 9rem;
+        font-size: 2rem;
+    }
+
+    .grid-content p{
+        width: 28rem;
+        position: absolute;
+        top: 7rem;
+        left: 9rem;
+        font-size: 1.5rem;
+    }
+    /*****/
+
+    /** Estilos da section.get-in **/
+    aside.text h1{
+        font-size: 3rem;
+    }
+
+    aside.text p{
+        font-size: 1.4rem;
+    }
+
+    aside.contacts {
+        display: flex;
+        border-bottom: 0;
+    }
+
+    aside.contacts form{
+        width: 100%;
+        border-bottom: 0;
+        border-right: 1px solid var(--color-primary);
+        padding-bottom: 5rem;
+    }
+
+    .form-wraper{
+        float: left;
+        padding: 0 2rem 0 0;
+    }
+
+    .form-wraper label{
+        font-size: 2rem;
+    }
+
+    .social{
+        width: 70%;
+    }
+
+    .social-content{
+        margin: 2rem;
+    }
+
+    .social-content h1{
+        font-size: 2rem;
+    }
+
+    .social-content p{
+        font-size: 1.7rem;    
+    }
+
+    .social-content a{
+        font-size: 1.7rem;
+    }
+
+    .social-icon ul li a i{
+        font-size: 2rem;
+    }
+    /*****/
+
+    /** Estilos do footer **/
+    .footer-wraper p{
+        font-size: 1.8rem;
+    }
+
+    .footer-wraper a{
+        font-size: 1.8rem;
+    }
+    /*****/
+}
+/*****/
+
+/** Estilos do @media width:1200px **/
+@media screen and (min-width: 1200px){
+    .container{
+        width: 85vw;
+    }
+    
+    .btn{
+        border-radius: 5rem;
+        width: 14rem;
+        height: 4.5rem;    
+        line-height: 4.5rem;
+        font-size: 1.2rem;
+    }
+
+    /** Estilos da nav **/
+    .desktop ul li{
+        padding: 1.2rem 0;
+        margin: 0 3.5rem;
+    }
+
+    .desktop ul li a{
+        font-size: 1.2rem;
+    }
+    /*****/
+
+    /** Estilos da section.welcome **/
+
+    section.welcome h1{
+        font-size: 3.5rem;
+    }
+
+    section.welcome p{
+        font-size: 1.7rem;
+    }
+
+    section.welcome p > a{
+        font-size: 1.7rem;
+    }
+    /*****/
+
+    /** Estilos da section.we-are **/
+
+    .we-are-box{
+        display: flex;
+        margin-bottom: 0;
+        background-color: var(--color-background-we-are-1);
+    }
+
+    .we-are-box:nth-of-type(2){
+        background-color: var(--color-background-we-are-2);
+    }
+
+    .we-are-box:nth-of-type(3){
+        background-color: var(--color-background-we-are-3);
+    }
+
+    aside.back{
+        width: 75%;
+        height: 35rem;
+        margin-bottom: 0;
+    }
+
+    .we-are-box > .container{
+        padding: 7rem 2rem 0;
+    }
+
+    .we-are-box h1{
+        font-size: 2.5rem;
+        padding-bottom: 2rem;
+    }
+
+    .we-are-box p{
+        font-size: 1.7rem;
+        padding-bottom: 5rem;
+    }
+    /*****/
+
+    /** Estilos da section.we-do **/
+    .we-do-text h1{
+        font-size: 3rem;
+    }
+
+    .we-do-text p{
+        font-size: 1.5rem;
+    }
+
+    .we-do-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .grid-content{
+        height: 15rem;
+    }
+
+    .grid-content:nth-of-type(1){
+        border-top: 1px solid rgba(247, 245, 245, 0.377);
+    }
+
+    .grid-content:nth-of-type(2){
+        border-top: 1px solid rgba(247, 245, 245, 0.377);
+    }
+
+    .grid-content i{
+        position: absolute;
+        top: 3.5rem;
+
+        width: 4.5rem;
+        height: 4.5rem;
+        line-height: 4.5rem;
+        font-size: 2rem;
+    }
+
+    .grid-content h2{
+        position: absolute;
+        top: 3.5rem;
+        left: 9rem;
+        font-size: 2rem;
+    }
+
+    .grid-content p{
+        width: 28rem;
+        position: absolute;
+        top: 7rem;
+        left: 9rem;
+        font-size: 1.5rem;
+    }
+    /*****/
+
+    /** Estilos da section.get-in **/
+    aside.text h1{
+        font-size: 3rem;
+    }
+
+    aside.text p{
+        font-size: 1.4rem;
+    }
+
+    aside.contacts {
+        display: flex;
+        border-bottom: 0;
+    }
+
+    aside.contacts form{
+        width: 100%;
+        border-bottom: 0;
+        border-right: 1px solid var(--color-primary);
+        padding-bottom: 5rem;
+    }
+
+    .form-wraper{
+        float: left;
+        padding: 0 2rem 0 0;
+    }
+
+    .form-wraper label{
+        font-size: 2rem;
+    }
+
+    .social{
+        width: 70%;
+    }
+
+    .social-content{
+        margin: 2rem;
+    }
+
+    .social-content h1{
+        font-size: 2rem;
+    }
+
+    .social-content p{
+        font-size: 1.7rem;    
+    }
+
+    .social-content a{
+        font-size: 1.7rem;
+    }
+
+    .social-icon ul li a i{
+        font-size: 2rem;
+    }
+    /*****/
+
+    /** Estilos do footer **/
+    .footer-wraper p{
+        font-size: 1.8rem;
+    }
+
+    .footer-wraper a{
+        font-size: 1.8rem;
     }
     /*****/
 }
