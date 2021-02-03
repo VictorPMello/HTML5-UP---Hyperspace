@@ -220,11 +220,12 @@ section.we-do{
 .we-do-grid{
     display: grid;
     grid-template-columns: 1fr;
-    background-color: var(--color-background-we-do-grid);
+    
     margin-bottom: 2rem;
 }
 
 .grid-content{
+    background-color: var(--color-background-we-do-grid);
     height: 15rem;
     position: relative;
     padding: 5rem 0;
@@ -917,155 +918,76 @@ footer > .container{
     /*****/
 
     /** Estilos da section.we-are **/
-
-    .we-are-box{
-        display: flex;
-        margin-bottom: 0;
-        background-color: var(--color-background-we-are-1);
-    }
-
-    .we-are-box:nth-of-type(2){
-        background-color: var(--color-background-we-are-2);
-    }
-
-    .we-are-box:nth-of-type(3){
-        background-color: var(--color-background-we-are-3);
-    }
-
     aside.back{
-        width: 75%;
-        height: 35rem;
-        margin-bottom: 0;
-    }
-
-    .we-are-box > .container{
-        padding: 7rem 2rem 0;
+        width: 45%;
+        height: 50rem;
+        background-size: 170% 100%;
+        margin-left: 12rem;
     }
 
     .we-are-box h1{
-        font-size: 2.5rem;
-        padding-bottom: 2rem;
+        font-size: 3rem;
+        padding-left: 6rem;
     }
 
     .we-are-box p{
-        font-size: 1.7rem;
-        padding-bottom: 5rem;
+        font-size: 2rem;
+        padding-left: 6rem;
     }
     /*****/
 
     /** Estilos da section.we-do **/
     .we-do-text h1{
-        font-size: 3rem;
+        padding-left: 6rem;
+        font-size: 3.5rem;
     }
 
     .we-do-text p{
-        font-size: 1.5rem;
+        padding-left: 6rem;
+        font-size: 1.7rem;
     }
 
     .we-do-grid{
+        margin-left: 6rem;
         grid-template-columns: 1fr 1fr;
     }
 
     .grid-content{
+        width: 45rem;
         height: 15rem;
-    }
-
-    .grid-content:nth-of-type(1){
-        border-top: 1px solid rgba(247, 245, 245, 0.377);
-    }
-
-    .grid-content:nth-of-type(2){
-        border-top: 1px solid rgba(247, 245, 245, 0.377);
-    }
-
-    .grid-content i{
-        position: absolute;
-        top: 3.5rem;
-
-        width: 4.5rem;
-        height: 4.5rem;
-        line-height: 4.5rem;
-        font-size: 2rem;
-    }
-
-    .grid-content h2{
-        position: absolute;
-        top: 3.5rem;
-        left: 9rem;
-        font-size: 2rem;
-    }
-
-    .grid-content p{
-        width: 28rem;
-        position: absolute;
-        top: 7rem;
-        left: 9rem;
-        font-size: 1.5rem;
     }
     /*****/
 
     /** Estilos da section.get-in **/
     aside.text h1{
-        font-size: 3rem;
+        font-size: 3.5rem;
+        padding-left: 6rem;
     }
 
     aside.text p{
-        font-size: 1.4rem;
+        padding-left: 6rem;
+        font-size: 1.8rem;
     }
 
     aside.contacts {
-        display: flex;
-        border-bottom: 0;
+        padding-left: 6rem;
     }
 
-    aside.contacts form{
-        width: 100%;
-        border-bottom: 0;
-        border-right: 1px solid var(--color-primary);
-        padding-bottom: 5rem;
-    }
-
-    .form-wraper{
-        float: left;
-        padding: 0 2rem 0 0;
+    aside.contacts > form > div.form-wraper > input[type=submit]{
+        margin-left: 0;
     }
 
     .form-wraper label{
-        font-size: 2rem;
-    }
-
-    .social{
-        width: 70%;
-    }
-
-    .social-content{
-        margin: 2rem;
+        font-size: 2.5rem;
     }
 
     .social-content h1{
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
-    .social-content p{
-        font-size: 1.7rem;    
-    }
-
+    .social-content p,
     .social-content a{
-        font-size: 1.7rem;
-    }
-
-    .social-icon ul li a i{
-        font-size: 2rem;
-    }
-    /*****/
-
-    /** Estilos do footer **/
-    footer{
-        position: fixed;
-    }
-
-    .footer-wraper a{
-        font-size: 1.8rem;
+        font-size: 2rem;    
     }
     /*****/
 }
