@@ -9,13 +9,13 @@ $(function(){
 $(function(){
     var contador = 0;
 
-    $('i').click(function(){
+    $('.mobile').click(function(){
         
         if(contador == 0){
-            $(this).css('transition-delay','').css('color','#5e42a6');
+            $(this).find('i').css('transition-delay','').css('color','#5e42a6');
             contador = 1;
         }else{
-            $(this).css('transition-delay','.5s').css('color','white');
+            $(this).find('i').css('transition-delay','.5s').css('color','white');
             contador = 0;
         }
     });
@@ -28,7 +28,20 @@ $(function(){
         var href = $(this).attr('href');
         var offSetTop = $(href).offset().top;
 
-        $('html,body').animate({'scrollTop':offSetTop})
-        return false;
+        $('html,body').animate({'scrollTop':offSetTop}, 1700);
+        return true;
     })
-});
+});/*****/
+
+    /* Adicionar border-bottom */
+$(function(){
+    // Remover o span atual
+    //Já está removendo
+   // var removerClasse = $('nav').find('span').remove();
+
+    // Adicionar o novo span  com click.
+  //  var adicionarClasse = $('nav').find('li').add("<span></span>");
+
+    // Remover o efeito da class
+    // colocar efeito 
+});/*****/  
