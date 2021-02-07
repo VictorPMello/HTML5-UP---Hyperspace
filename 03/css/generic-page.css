@@ -1,0 +1,104 @@
+.generic-content{
+    width: 100%;
+    text-align: left;
+    padding: 5rem 0;
+    background-color: var(--color-background-menu);
+}
+
+.generic-content h1{
+    position: relative;
+    color: var(--color-secondary);
+    font-size: 3rem;
+    padding-bottom: 3rem;
+    margin-bottom: 3rem;
+}
+
+.generic-content h1 span{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: var(--color-border-bottom);
+    padding: .1rem;
+}
+
+.generic-content img{
+    width: 100%;
+    padding-bottom: 3rem;
+}
+
+.generic-content p{
+    font-size: 2rem;
+    line-height: 3.5rem;
+    color: var(--color-primary);
+    padding-bottom: 2rem;
+}
+
+footer{
+    background-color: #261c3e;
+}
+
+/** Estilos do @media width: 650px **/
+@media screen and (min-width: 650px){
+    .desktop{
+        background-color: var(--color-background-welcome);
+    }
+
+    .body-wraper{
+        padding-top: 5rem;
+    }
+}
+/*****/
+
+/** Estilos do @media width: 820px **/
+@media screen and (min-width: 820px){
+    .generic-content h1{
+        text-align: center;
+    }
+}
+/*****/
+
+/** Estilos do @media width:1200px  terminar de fazer **/
+@media screen and (min-width: 1200px){
+    .body-wraper{
+        padding: 0;
+    }
+
+    .landing-page + .body-wraper{
+        margin-left: 0;
+    }
+
+    /** Estilos da nav **/
+    nav.landing-page{
+        z-index: 0;
+        width: 100%;
+        position: initial;
+    }
+
+    .desktop{
+        height: 5rem;
+        position: initial;
+    }
+
+    .desktop ul{
+        position: initial;
+        top: none;
+        left: none;
+        transform: none;
+        width: 100%;
+        display: flex;
+        text-align: right;
+    }
+
+    .desktop ul li{
+        position: initial;
+        cursor: pointer; 
+    }
+
+    .desktop ul li a{
+        display: block;
+        font-size: 2.2rem;
+    }
+    /*****/
+}
+/*****/
