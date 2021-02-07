@@ -11,6 +11,7 @@
     --color-background-footer: #493382;
     --color-primary: #ffffff8C;
     --color-secondary: #ffffff;
+    --color-border-bottom:  linear-gradient(to right, #5e42a6, #b74e91);
 
     font-family: 'Lato', sans-serif;
     font-size: 60%;
@@ -502,10 +503,23 @@ footer > .container{
     }
 
     .desktop ul li{
-        padding: 2rem 0 3rem; 
+        position: relative;
+        padding: 2rem 0 1rem; 
         margin: 0 2rem;
-        border-bottom: .3rem solid var(--color-background-we-do);
         cursor: pointer; 
+    }
+
+    .desktop ul li span{
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: var(--color-border-bottom);
+        padding: .2rem;
+    }
+
+    .desktop ul li  span + a{
+        color: var(--color-secondary);
     }
 
     .desktop ul li a{
@@ -517,7 +531,7 @@ footer > .container{
         color: var(--color-primary);
         transition: .2s;
     }
-
+    
     .desktop ul li a:hover{
         color: var(--color-secondary);
     }
@@ -662,12 +676,13 @@ footer > .container{
 
     /** Estilos da nav **/
     .desktop ul li{
+        position: relative;
         padding: 1.2rem 0;
         margin: 0 3.5rem;
     }
 
     .desktop ul li a{
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
     /*****/
 
@@ -853,17 +868,17 @@ footer > .container{
         height: 5rem;    
         line-height: 5rem;
         font-size: 1.4rem;
-        margin-left: 6rem;
+        margin-left: 3rem;
     }
 
     .landing-page + .body-wraper{
-        margin-left: 18rem;
+        margin-left: 15rem;
     }
 
     /** Estilos da nav **/
     nav.landing-page{
         z-index: 0;
-        width: 25%;
+        width: 20%;
     }
 
     .desktop{
@@ -882,14 +897,15 @@ footer > .container{
     }
 
     .desktop ul li{
-        padding: 2rem 0 2rem; 
+        position: relative;
+        padding: 5rem 0 2rem; 
         margin: 0 2rem;
         cursor: pointer; 
     }
 
     .desktop ul li a{
         display: block;
-        font-size: 1.4rem;
+        font-size: 2.2rem;
     }
     /*****/
 
@@ -902,13 +918,13 @@ footer > .container{
     section.welcome h1{
         font-size: 6rem;
         padding-bottom: 6rem;
-        padding-left: 6rem;
+        padding-left: 3rem;
     }
     
     section.welcome p{
         font-size: 2rem;
         padding-bottom: 6rem;
-        padding-left: 6rem;
+        padding-left: 3rem;
         line-height: 4rem;
     }
     
@@ -919,36 +935,36 @@ footer > .container{
 
     /** Estilos da section.we-are **/
     aside.back{
-        width: 45%;
+        width: 40%;
         height: 40rem;
-        background-size: 170% 100%;
+        background-size: 110% 100%;
         margin-left: 12rem;
     }
 
     .we-are-box h1{
         font-size: 3rem;
-        padding-left: 6rem;
+        padding-left: 3rem;
     }
 
     .we-are-box p{
         font-size: 2rem;
-        padding-left: 6rem;
+        padding-left: 3rem;
     }
     /*****/
 
     /** Estilos da section.we-do **/
     .we-do-text h1{
-        padding-left: 6rem;
+        padding-left: 3rem;
         font-size: 3.5rem;
     }
 
     .we-do-text p{
-        padding-left: 6rem;
+        padding-left: 3rem;
         font-size: 1.7rem;
     }
 
     .we-do-grid{
-        margin-left: 6rem;
+        margin-left: 3rem;
         grid-template-columns: 1fr 1fr;
     }
 
@@ -961,16 +977,16 @@ footer > .container{
     /** Estilos da section.get-in **/
     aside.text h1{
         font-size: 3.5rem;
-        padding-left: 6rem;
+        padding-left: 3rem;
     }
 
     aside.text p{
-        padding-left: 6rem;
+        padding-left: 3rem;
         font-size: 1.8rem;
     }
 
     aside.contacts {
-        padding-left: 6rem;
+        padding-left: 3rem;
     }
 
     aside.contacts > form > div.form-wraper > input[type=submit]{
