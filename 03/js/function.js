@@ -35,13 +35,14 @@ $(function(){
 
     /* Adicionar border-bottom */
 $(function(){
-    // Remover o span atual
-    //Já está removendo
-   // var removerClasse = $('nav').find('span').remove();
+    var removeSpan = $(this).find('span').remove();
+    var  addSpan = $('nav li').prepend($('span'));
+    $('nav').click(function(){
+       
+           
+        
+    });  
+});
 
-    // Adicionar o novo span  com click.
-  //  var adicionarClasse = $('nav').find('li').add("<span></span>");
-
-    // Remover o efeito da class
-    // colocar efeito 
-});/*****/  
+// 
+// 
