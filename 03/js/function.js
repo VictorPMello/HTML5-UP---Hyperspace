@@ -35,14 +35,23 @@ $(function(){
 
     /* Adicionar border-bottom */
 $(function(){
-    var removeSpan = $(this).find('span').remove();
-    var  addSpan = $('nav li').prepend($('span'));
-    $('nav').click(function(){
-       
-           
-        
-    });  
-});
+    
 
-// 
-// 
+    $('nav').click(function(){
+        
+        
+         
+            $(this).find('span').addClass('border-bottom').css('background', 'linear-gradient(to right, #5e42a6, #b74e91)');
+         
+             
+          
+          
+    });  
+
+        
+    
+});
+// descobrir como parar a o click
+//var removeSpan = $(this).find('span').remove();
+//var  addSpan = $('nav li').prepend($('span'));
+// $(this).find('span').removeClass('a')
