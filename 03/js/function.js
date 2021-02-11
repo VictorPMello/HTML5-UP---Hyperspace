@@ -36,12 +36,25 @@ $(function(){
     /* Adicionar border-bottom */
 $(function(){
     
-    $('ul li').click(function(){
-        $(this).find('span.border-bottom').removeClass("border-bottom");
+    $('span').click(function(){
+        var contador = 0;
+            $(this).each(function(){
+                if (contador == 0) {
+                    $(this).Class('border-bottom');
+                    $(this).find('span').addClass("no-border"); 
+                    console.log('estou aqui 1');
+                    contador = 1;
+                } else {
+                    $(this).find('span').addClass('border-bottom');
+                    $(this).find('span').removeClass("no-border");
+                    console.log('estou aqui 2');
+                    contador = 0;
+                }
+            });
+ 
+        
 
-        $('span').toggleClass("border-bottom");
-
-
+        // $(this).find('span.border-bottom').removeClass("border-bottom");
         // pedar uma class 1/2/3/4 e aplicar o border-bottom apenas no número correspondente 
     });
 });
