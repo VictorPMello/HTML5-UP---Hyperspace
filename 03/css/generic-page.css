@@ -34,6 +34,15 @@
     padding-bottom: 2rem;
 }
 
+.desktop ul li span.border-bottom{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to right, #312450, #b74e91);
+    padding: .1rem;
+}
+
 footer{
     background-color: #261c3e;
 }
@@ -61,43 +70,57 @@ footer{
 /** Estilos do @media width:1200px  terminar de fazer **/
 @media screen and (min-width: 1200px){
     .body-wraper{
-        padding: 0;
+        padding-top: 0;
+    }
+
+    .container{
+        width: 70vw;
+    }
+    
+    .btn{
+        border-radius: 5rem;
+        width: 20rem;
+        height: 5rem;    
+        line-height: 5rem;
+        font-size: 1.4rem;
+        margin-left: 3rem;
     }
 
     .landing-page + .body-wraper{
-        margin-left: 0;
+        margin-left: 20rem;
     }
 
     /** Estilos da nav **/
     nav.landing-page{
         z-index: 0;
-        width: 100%;
-        position: initial;
+        width: 15%;
     }
 
     .desktop{
-        height: 5rem;
-        position: initial;
+        height: 100vh;
+        position: relative;
     }
 
     .desktop ul{
-        position: initial;
-        top: none;
-        left: none;
-        transform: none;
-        width: 100%;
-        display: flex;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 90%;
+        display: inline-block;
         text-align: right;
     }
 
     .desktop ul li{
-        position: initial;
+        position: relative;
+        padding: 5rem 0 2rem; 
+        margin: 0 2rem;
         cursor: pointer; 
     }
 
     .desktop ul li a{
         display: block;
-        font-size: 2.2rem;
+        font-size: 2.5rem;
     }
     /*****/
 }
