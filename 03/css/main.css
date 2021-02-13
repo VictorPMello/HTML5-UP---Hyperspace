@@ -518,7 +518,7 @@ footer > .container{
         padding: .1rem;
     }
 
-    .desktop ul li  span + a{
+    .desktop ul li  span.border-bottom + a{
         color: var(--color-secondary);
     }
 
