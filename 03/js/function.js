@@ -36,8 +36,28 @@ $(function(){
     /* Adicionar border-bottom */
 $(function(){
     
-    $('span').click(function(){
-        var contador = 0;
+    $('nav ul li').click(function(){
+        var idx = $(this).index(); // pega a posição da li
+        var comparar = $(this).find('span.border-bottom');
+        // descobrir como comparar 'idx' com 'comparar'  
+
+        if(idx == idx){
+            $('ul li').find('span').addClass('border-bottom');
+        }else if(idx !== idx){
+            $('ul li').find('span').removeClass('border-bottom');
+        }
+
+        // $(this).find('span.border-bottom').removeClass("border-bottom");
+        //*Usar este* pegar uma class 1/2/3/4 e aplicar o border-bottom apenas no número correspondente 
+    });
+});
+
+// descobrir como parar a o click
+//var removeSpan = $(this).find('span').remove();
+//var  addSpan = $('nav li').prepend($('span'));
+// $(this).find('span').removeClass('a')
+
+/* var contador = 0;
             $(this).each(function(){
                 if (contador == 0) {
                     $(this).Class('border-bottom');
@@ -51,15 +71,4 @@ $(function(){
                     contador = 0;
                 }
             });
- 
-        
-
-        // $(this).find('span.border-bottom').removeClass("border-bottom");
-        // pedar uma class 1/2/3/4 e aplicar o border-bottom apenas no número correspondente 
-    });
-});
-
-// descobrir como parar a o click
-//var removeSpan = $(this).find('span').remove();
-//var  addSpan = $('nav li').prepend($('span'));
-// $(this).find('span').removeClass('a')
+ */
