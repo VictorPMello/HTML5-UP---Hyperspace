@@ -38,14 +38,13 @@ $(function(){
     
     $('nav ul li').click(function(){
         var idx = $(this).index(); // pega a posição da li
-        var comparar = $(this).find('span.border-bottom');
-        // descobrir como comparar 'idx' com 'comparar'  
 
-        if(idx == idx){
-            $('ul li').find('span').addClass('border-bottom');
-        }else if(idx !== idx){
-            $('ul li').find('span').removeClass('border-bottom');
-        }
+            $('ul li').find('span.border-bottom').removeClass('border-bottom');
+            
+            $('ul li').find('span').delay(500).queue(function (next){
+                $(this).addClass('border-bottom');
+            })
+            console.log(idx)
 
         // $(this).find('span.border-bottom').removeClass("border-bottom");
         //*Usar este* pegar uma class 1/2/3/4 e aplicar o border-bottom apenas no número correspondente 
