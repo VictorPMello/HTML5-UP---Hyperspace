@@ -35,19 +35,12 @@ $(function(){
 
     /* Adicionar border-bottom */
 $(function(){
-    
     $('nav ul li').click(function(){
         var idx = $(this).index(); // pega a posição da li
 
             $('ul li').find('span.border-bottom').removeClass('border-bottom');
             
-            $('ul li').find('span').delay(500).queue(function (next){
-                $(this).addClass('border-bottom');
-            })
-            console.log(idx)
-
-        // $(this).find('span.border-bottom').removeClass("border-bottom");
-        //*Usar este* pegar uma class 1/2/3/4 e aplicar o border-bottom apenas no número correspondente 
+            $('li').eq(idx).find('span').addClass('border-bottom');    
     });
 });
 
@@ -71,3 +64,5 @@ $(function(){
                 }
             });
  */
+// $(this).find('span.border-bottom').removeClass("border-bottom");
+        //*Usar este* pegar uma class 1/2/3/4 e aplicar o border-bottom apenas no número correspondente 
