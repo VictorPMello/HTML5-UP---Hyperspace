@@ -509,13 +509,23 @@ footer > .container{
         cursor: pointer; 
     }
 
-    .desktop ul li span.border-bottom{
+    .desktop ul li .absolute{
         width: 100%;
         position: absolute;
-        bottom: 0;
+        bottom: -4px;
         left: 0;
+    }
+
+    .desktop ul li span.border-bottom{
+        display: inline-block;
+        position: static;
+        width: 100%;
         background: var(--color-border-bottom);
-        padding: .1rem;
+        padding: .2rem;
+    }
+
+    .desktop ul li.non-border{
+        border-bottom: .2rem solid rgba(255, 255, 255, .1);
     }
 
     .desktop ul li  span.border-bottom + a{
