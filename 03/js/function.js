@@ -38,9 +38,13 @@ $(function(){
     $('nav ul li').click(function(){
         var idx = $(this).index(); // pega a posição da li
 
-            $('ul li').find('span.border-bottom').removeClass('border-bottom');
+            $('ul li').find('span.border-bottom').removeClass('border-bottom')
             
-            $('li').eq(idx).find('span').addClass('border-bottom');    
+            $('li').eq(idx).find('span').addClass('border-bottom');  
+
+            /* Colocar as animações
+            .animate({width: "-=387px"});
+            .animate({width: "+=193.5px"});*/
     });
 });
 
